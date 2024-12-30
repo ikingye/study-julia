@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="generator" content="Hugo 0.140.1">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+  语法
+  #
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://kingye.me/study-julia/docs/basic/grammar/">
+  <meta property="og:site_name" content="Julia 学习笔记">
+  <meta property="og:title" content="1.1 语法">
+  <meta property="og:description" content="语法 #">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
+<title>1.1 语法 | Julia 学习笔记</title>
+<link rel="manifest" href="/study-julia/manifest.json">
+<link rel="icon" href="/study-julia/favicon.png" >
+<link rel="canonical" href="https://kingye.me/study-julia/docs/basic/grammar/">
+<link rel="stylesheet" href="/study-julia/book.min.a9fd347d07ee042ade7b8c22d2c14b72b69e154966252ab277e80a22c2a3be81.css" integrity="sha256-qf00fQfuBCree4wi0sFLcraeFUlmJSqyd&#43;gKIsKjvoE=" crossorigin="anonymous">
+  <script defer src="/study-julia/fuse.min.js"></script>
+  <script defer src="/study-julia/en.search.min.776bff9362727ed883d3fe035c109ce1a9f51f42a7891808038da7ddff565498.js" integrity="sha256-d2v/k2JyftiD0/4DXBCc4an1H0KniRgIA42n3f9WVJg=" crossorigin="anonymous"></script>
+<link rel="alternate" type="application/rss+xml" href="https://kingye.me/study-julia/docs/basic/grammar/index.xml" title="Julia 学习笔记" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/study-julia/"><span>Julia 学习笔记</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+<ul>
+  <li><a href="https://kingye.me" target="_blank" rel="noopener noreferrer">博客</a></li>
+  <li><a href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417021727.png" target="_blank" rel="noopener noreferrer">公众号</a></li>
+  <li><a href="https://github.com/ikingye" target="_blank" rel="noopener noreferrer">Github</a></li>
+  <li><a href="https://weibo.com/kingyip15215" target="_blank" rel="noopener noreferrer">微博</a></li>
+  <li><a href="https://www.zhihu.com/people/wutongyip" target="_blank" rel="noopener noreferrer">知乎</a></li>
+</ul>
+<hr />
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>第一部分 基础入门</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b26648bfc22135c584188bb7f762cd55" class="toggle" checked />
+    <label for="section-b26648bfc22135c584188bb7f762cd55" class="flex justify-between">
+      <a href="/study-julia/docs/basic/grammar/" class="active">1.1 语法</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e533df60e153f49fd8756c3c7d0ce696" class="toggle"  />
+    <label for="section-e533df60e153f49fd8756c3c7d0ce696" class="flex justify-between">
+      <a href="/study-julia/docs/basic/grammar/type/" class="">1.1.1 数据类型</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-abcb45d229258b997961cd47d8c360e3" class="toggle"  />
+    <label for="section-abcb45d229258b997961cd47d8c360e3" class="flex justify-between">
+      <a href="/study-julia/docs/basic/grammar/keyword/" class="">1.1.2 关键字</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-05da6cf38627b7b1090b7f32345a2e4d" class="toggle"  />
+    <label for="section-05da6cf38627b7b1090b7f32345a2e4d" class="flex justify-between">
+      <a href="/study-julia/docs/basic/std/" class="">1.2 标准库</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3ddc996d5134ef50716b07baaa45158c" class="toggle"  />
+    <label for="section-3ddc996d5134ef50716b07baaa45158c" class="flex justify-between">
+      <a href="/study-julia/docs/basic/spec/" class="">1.3 编程规范</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-736d497ad93fd6290b32ad67aad15076" class="toggle"  />
+    <label for="section-736d497ad93fd6290b32ad67aad15076" class="flex justify-between">
+      <a href="/study-julia/docs/basic/others/" class="">1.4 其他</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-52c7451025eb4e4dc82b62fb42adead7" class="toggle"  />
+    <label for="section-52c7451025eb4e4dc82b62fb42adead7" class="flex justify-between">
+      <a href="/study-julia/docs/basic/others/version/" class="">版本</a>
+    </label>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>第二部分 进阶实战</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-91e30e792709cdb7912fb3a11ccb393e" class="toggle"  />
+    <label for="section-91e30e792709cdb7912fb3a11ccb393e" class="flex justify-between">
+      <a href="/study-julia/docs/advanced/pattern/" class="">2.1 设计模式</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c4ae5251be1e3d3c44009afaefaf73da" class="toggle"  />
+    <label for="section-c4ae5251be1e3d3c44009afaefaf73da" class="flex justify-between">
+      <a href="/study-julia/docs/advanced/algs/" class="">2.2 算法实现</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d8cb21085f69882122d8f8279a4c41f8" class="toggle"  />
+    <label for="section-d8cb21085f69882122d8f8279a4c41f8" class="flex justify-between">
+      <a href="/study-julia/docs/advanced/pkg/" class="">2.3 常用库</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ea3dbf60b711bece82720985a5d002fc" class="toggle"  />
+    <label for="section-ea3dbf60b711bece82720985a5d002fc" class="flex justify-between">
+      <a href="/study-julia/docs/advanced/snippet/" class="">2.4 代码片段</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0e0b6a0fddce5096e93ed9101ab496b2" class="toggle"  />
+    <label for="section-0e0b6a0fddce5096e93ed9101ab496b2" class="flex justify-between">
+      <a href="/study-julia/docs/advanced/test/" class="">2.5 测试</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-fa70e03580286bc4d9473f05aadb6569" class="toggle"  />
+    <label for="section-fa70e03580286bc4d9473f05aadb6569" class="flex justify-between">
+      <a href="/study-julia/docs/advanced/prof/" class="">2.6 性能</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a67949caeceeb2a008a970ee068f362c" class="toggle"  />
+    <label for="section-a67949caeceeb2a008a970ee068f362c" class="flex justify-between">
+      <a href="/study-julia/docs/advanced/frame/" class="">2.7 框架</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>第三部分 设计与实现</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c811502820da2687fb659ece96a29d90" class="toggle"  />
+    <label for="section-c811502820da2687fb659ece96a29d90" class="flex justify-between">
+      <a href="/study-julia/docs/design/type/" class="">3.1 数据类型</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a9831f8828c3859e4c814285e0ccfc6e" class="toggle"  />
+    <label for="section-a9831f8828c3859e4c814285e0ccfc6e" class="flex justify-between">
+      <a href="/study-julia/docs/design/keyword/" class="">3.2 关键字</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2960b2c828b6409c99282b19637ccde7" class="toggle"  />
+    <label for="section-2960b2c828b6409c99282b19637ccde7" class="flex justify-between">
+      <a href="/study-julia/docs/design/runtime/" class="">3.3 运行时</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/study-julia/docs/design/code/" class="">3.7 源码分析</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>第四部分 附录</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8ce0530745f4549614b5ea78a4f6b1ef" class="toggle"  />
+    <label for="section-8ce0530745f4549614b5ea78a4f6b1ef" class="flex justify-between">
+      <a href="/study-julia/docs/appendix/tutorial/" class="">4.1 教程</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-54c16b5b89ac322bf3b3e1dac655dd49" class="toggle"  />
+    <label for="section-54c16b5b89ac322bf3b3e1dac655dd49" class="flex justify-between">
+      <a href="/study-julia/docs/appendix/interview/" class="">4.2 面试题</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-6773afb8e2ce8d80d0b3f49ff14e4c5e" class="toggle"  />
+    <label for="section-6773afb8e2ce8d80d0b3f49ff14e4c5e" class="flex justify-between">
+      <a href="/study-julia/docs/appendix/attention/" class="">4.3 关注项目</a>
+    </label>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr />
+<ul>
+  <li><a href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png" target="_blank" rel="noopener noreferrer">微信</a></li>
+  <li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=EUhzg0UwUksxpQnwEmPngRLezlC6qrnn&jump_from=webapi" target="_blank" rel="noopener noreferrer"><img src="//pub.idqqimg.com/wpa/images/group.png"></a></li>
+</ul>
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/study-julia/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>1.1 语法</strong>
+
+  <label for="toc-control">
+    
+    <img src="/study-julia/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents"></nav>
+<hr />
+<ul>
+  <li><a href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png" target="_blank" rel="noopener noreferrer">微信</a></li>
+  <li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=EUhzg0UwUksxpQnwEmPngRLezlC6qrnn&jump_from=webapi" target="_blank" rel="noopener noreferrer"><img src="//pub.idqqimg.com/wpa/images/group.png"></a></li>
+</ul>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article id="article" class="markdown"><h1 id="语法">
+  语法
+  <a class="anchor" href="#%e8%af%ad%e6%b3%95">#</a>
+</h1>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+  <div><a class="flex align-center" href="https://github.com/ikingye/study-julia/commit/29e93b1ccc6a3a193ebfc67fc1c0df1309709f17" title='Last modified by yewang | 2022-02-08' target="_blank" rel="noopener">
+      <img src="/study-julia/svg/calendar.svg" class="book-icon" alt="" />
+      <span>2022-02-08</span>
+    </a>
+  </div>
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        <div>
+    <br>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <p><span id="busuanzi_container_page_pv">本文访问量 <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> 次</span></p>
+    <p><span id="busuanzi_container_site_pv">本站总访问量 <span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span> 次</span></p>
+    <p><span id="busuanzi_container_site_uv">本站总访客数 <span id="busuanzi_value_site_uv"><i class="fa fa-spinner fa-spin"></i></span> 人</span></p>
+</div>
+
+
+
+
+
+      </footer>
+
+      
+  
+  <div class="book-comments">
+<script src="https://utteranc.es/client.js"
+  repo="ikingye/study-julia"
+  issue-term="pathname"
+  theme="github-light"
+  crossorigin="anonymous"
+  async
+></script>
+
+<div id="footer">
+  <p>
+    <a href="https://kingye.me">叶王</a> &copy; 2013-2024
+    版权所有。如果本文档对你有所帮助，可以<a
+      href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200428110046.png"
+      target="_blank"
+      rel="noopener noreferrer"
+      >请作者喝饮料</a
+    >。
+  </p>
+</div>
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents"></nav>
+<hr />
+<ul>
+  <li><a href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png" target="_blank" rel="noopener noreferrer">微信</a></li>
+  <li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=EUhzg0UwUksxpQnwEmPngRLezlC6qrnn&jump_from=webapi" target="_blank" rel="noopener noreferrer"><img src="//pub.idqqimg.com/wpa/images/group.png"></a></li>
+</ul>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
